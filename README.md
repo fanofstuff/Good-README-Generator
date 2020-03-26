@@ -22,7 +22,7 @@ The README will be populated with the following:
 * Tests
 * Questions
   * User GitHub profile picture
-  * User GitHub email
+  <!-- * User GitHub email -->
 
 
 Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
@@ -49,7 +49,7 @@ When creating an open source project on GitHub, it is important to have a qualit
 
 * The generated README includes a bio image from the user's GitHub profile.
 
-* The generated README includes the user's email.
+<!-- * The generated README includes the user's email. -->
 
 * The generated README includes the following sections: 
   * Title
