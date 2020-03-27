@@ -82,3 +82,5 @@ Copyright © 2020, fanofstuff
     
 ![user's Github avatar image](https://avatars0.githubusercontent.com/u/57719131?v=4)
 
+![GIF of README creation](https://github.com/fanofstuff/Good-README-Generator/blob/master/README%20Generator.gif)
+
