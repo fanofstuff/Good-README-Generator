@@ -45,10 +45,6 @@
 ## Credits
       
 
-      
-## Relevant Badges
-      
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
             
 ## Contributing
       

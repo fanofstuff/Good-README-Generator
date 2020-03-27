@@ -193,11 +193,7 @@ ${usage}
 ## Credits
       
 ${credits}
-      
-## Relevant Badges
-      
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-            
+
 ## Contributing
       
 To contribute to this project (${title}): 

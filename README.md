@@ -1,107 +1,84 @@
+
 # Unit 09 Node.js and ES6+ Homework: Good README Generator
 
-Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
-```sh
-node index.js
-```
+### What is this project supposed to do?
+      
+This project was intended to create a dynamic README generator based upon user input. This user input would be collected via inquirer and axios, arranged into a prefabricated template using template literals, and then written into a README file using fs and util's writeFile and promisify functions, respectively. 
 
-The user will be prompted for their GitHub username, which will be used to make a call to the GitHub API to retrieve their email and profile image. They will then be prompted with questions about their project.
-(Note: Email is no longer supported via Github API, and is thus no longer required)
+### Why am I doing this?
+      
+The user story that came with this project paints the picture of a coder wishing to optimize their work schedule by automating the creation and structure of their README files. This project, then, was ultimately intended to serve as a time-saver for the busy coder that can't be bothered to use the copy and paste functions. 
 
-The README will be populated with the following:
+### Why does this matter? 
+      
+As stated, this program can serve as a reasonable replacement for any generic README template that the user may otherwise have lying around. Never again will you completely forget to include a test function or similar. 
 
-* At least one badge
-* Project title
-* Description
-* Table of Contents
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
-  * User GitHub profile picture
-  <!-- * User GitHub email -->
+### Here's what I've learned: 
+      
+Personally, I found that async functions, while still somewhat alien at this point in time, are practically invaluable when pulling data from multiple streams simultaneously - their await function is really, really nice. Similarly, this is the first time that I've really had to think about the uses for both inquirer and template literals. While the former is somewhat disappointing in how limited its scope is, the latter has proven to be surprisingly adaptable, if finicky at times (Prettier messed it up something fierce). 
 
+### So, how is this project special? 
 
-Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
+While copying and pasting an old README is certainly viable, and in some ways better overall, this project does have the added benefit of dynamically creating its own output - technically, you wouldn't even have to open up the program itself outside of the terminal. Honestly, though, this is far more "interesting" than practical. 
 
-```
-AS A developer
+## Table of Contents
+      
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Test](#test)
+  - [FAQs](#faqs)
+      
+## Installation
+      
+Everything that the end user needs should already be included in the files available on Github. 
+      
+## Usage
+     
+Specifically, you'll want to open up your terminal or command line, make your way to the Good-Readme-Generator folder (or equivalent), and run "node index.js". From there, follow the on-screen prompts. Your final README.md should generate in the assets folder that's in the same folder as index.js. 
+      
+## Credits
+      
+Tucker Hembree, https://github.com/fanofstuff
 
-I WANT a README generator
+## Contributing
+      
+To contribute to this project (Unit 09 Node.js and ES6+ Homework: Good README Generator): 
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
+      
+## Test
+      
+The following should contain a test to display the functionality of the code. Please run the following before attempting to merge any code.
 
-SO THAT I can easily put together a good README for a new project
-```
+    node index.js 
 
-Refer to the [Good README guide](../../01-HTML-Git-CSS/04-Supplemental/Good-README-Guide/README.md).
+## FAQs
 
-## Business Context
+1. Where can I report a bug or error that I find?
+      
+   Honestly, just contact me through Github or LinkedIn - I can't imagine that anyone would do this, but, hey, I'm open to surprises. 
+      
+2. What additional features or improvements do you currently have planned?
+      
+   Absolutely none (unless this is revisited as a further homework assignment). 
+      
+3. Why did you hardcode in three questions for the FAQ section? 
+      
+   Look, Inquirer is surprisingly inflexible, okay. Maybe I just missed something. Besides, if you have more than 3 FAQs you should probably avoid relying upon something that I slogged through in <10 hours, ya know? 
+      
+## License
+      
+This project (Unit 09 Node.js and ES6+ Homework: Good README Generator) uses the following license(s): [MIT](https://choosealicense.com/licenses/mit/)
+      
+---
+      
+Copyright © 2020, fanofstuff
+    
+![user's Github avatar image](https://avatars0.githubusercontent.com/u/57719131?v=4)
 
-When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
-
-## Minimum Requirements
-
-* Functional, deployed application.
-
-* GitHub repository with a unique name and a README describing project.
-
-* The generated README includes a bio image from the user's GitHub profile.
-
-<!-- * The generated README includes the user's email. -->
-
-* The generated README includes the following sections: 
-  * Title
-  * Description
-  * Table of Contents
-  * Installation
-  * Usage
-  * License
-  * Contributing
-  * Tests
-  * Questions
-
-* The generated README includes 1 badge that's specific to the repository.
-
-```
-GIVEN the developer has a GitHub profile and a repository
-
-WHEN prompted for the developer's GitHub username and repo specific information
-
-THEN a README for the repo is generated
-```
-- - -
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have more than 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* An animated GIF demonstrating the app functionality
-
-* A generated README.md file for a project repo.
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
